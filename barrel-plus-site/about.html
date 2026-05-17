@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О компании — Баррель Плюс</title>
+  <meta name="description" content="ООО Баррель Плюс — торговля моторным топливом в Калининграде. Реквизиты, руководство, виды деятельности.">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="about">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">БАРРЕЛЬ <span>ПЛЮС</span></a>
+      <button type="button" class="nav-toggle" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="main-nav" aria-label="Навигация">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="calculator.html">Калькулятор</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <form class="header-search" data-search-form action="search.html" role="search">
+        <input type="search" name="q" placeholder="Поиск" aria-label="Поиск">
+        <button type="submit" class="btn btn-primary btn-sm">Найти</button>
+      </form>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <nav class="breadcrumbs" data-breadcrumbs aria-label="Хлебные крошки"></nav>
+      <header class="page-header">
+        <h1 class="page-title">О компании</h1>
+        <p class="page-lead" data-company-short>ООО «Баррель Плюс»</p>
+      </header>
+
+      <div class="about-layout section">
+        <div class="content-block">
+          <p><span data-company-full></span> зарегистрировано <span data-company-registered></span>. Главный офис в Калининграде: <span data-company-address></span>.</p>
+          <p>Основной вид деятельности — <span data-company-okved></span>. Компания осуществляет оптовую и розничную торговлю нефтепродуктами и ГСМ в Калининградской области, работает с юридическими лицами и индивидуальными предпринимателями.</p>
+          <p>Уставный капитал — <span data-company-capital></span>. Учредитель — <span data-company-founder></span>. Руководитель — <span data-company-director-full></span>.</p>
+          <p>По данным ЕГРЮЛ: исполнительных производств и арбитражных дел не зафиксировано; участие в тендерах не отмечено.</p>
+          <p><a href="contacts.html" class="btn btn-primary">Связаться с нами</a></p>
+        </div>
+        <img src="images/about-office.jpg" alt="Офис компании в Калининграде" class="about-photo" loading="lazy" width="600" height="400">
+      </div>
+
+      <section class="section">
+        <h2 class="section-title">Реквизиты</h2>
+        <table class="spec-table company-details">
+          <tbody>
+            <tr><th>Полное наименование</th><td data-company-full></td></tr>
+            <tr><th>ИНН</th><td data-company-inn></td></tr>
+            <tr><th>ОГРН</th><td data-company-ogrn></td></tr>
+            <tr><th>КПП</th><td data-company-kpp></td></tr>
+            <tr><th>ОКПО</th><td data-company-okpo></td></tr>
+            <tr><th>Юридический адрес</th><td data-company-address></td></tr>
+            <tr><th>Дата регистрации</th><td data-company-registered></td></tr>
+            <tr><th>ОКВЭД (основной)</th><td data-company-okved></td></tr>
+            <tr><th>Генеральный директор</th><td data-company-director-full></td></tr>
+            <tr><th>Учредитель</th><td data-company-founder></td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section section--alt">
+        <h2 class="section-title">Дополнительные виды деятельности (ОКВЭД)</h2>
+        <ul class="okved-list">
+          <li><strong>22.11</strong> — производство резиновых шин, покрышек и камер; восстановление резиновых шин и покрышек</li>
+          <li><strong>25.11</strong> — производство строительных металлических конструкций, изделий и их частей</li>
+          <li><strong>25.12</strong> — производство металлических дверей и окон</li>
+          <li><strong>25.62</strong> — обработка металлических изделий механическая</li>
+        </ul>
+        <p class="text-muted">Всего в ЕГРЮЛ зарегистрировано 25 видов деятельности. Связи с другими компаниями не установлены.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand"><a href="index.html" class="logo">БАРРЕЛЬ <span>ПЛЮС</span></a><p>Калининградская область</p></div>
+      <nav class="footer-nav"><a href="catalog.html">Каталог</a><a href="privacy.html">Политика</a></nav>
+      <p class="footer-copy" data-company-legal-footer></p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

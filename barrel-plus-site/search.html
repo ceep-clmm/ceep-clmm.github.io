@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Поиск — Баррель Плюс</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="search">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">БАРРЕЛЬ <span>ПЛЮС</span></a>
+      <button type="button" class="nav-toggle" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="main-nav" aria-label="Навигация">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="calculator.html">Калькулятор</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <form class="header-search" data-search-form action="search.html" role="search">
+        <input type="search" name="q" placeholder="Поиск" aria-label="Поиск" id="search-page-input">
+        <button type="submit" class="btn btn-primary btn-sm">Найти</button>
+      </form>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <nav class="breadcrumbs" data-breadcrumbs aria-label="Хлебные крошки"></nav>
+      <header class="page-header">
+        <h1 class="page-title">Результаты поиска</h1>
+        <p class="page-lead">Запрос: «<span data-search-query></span>»</p>
+      </header>
+      <div id="search-results" class="section"></div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">© 2026 Баррель Плюс</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
